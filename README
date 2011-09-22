@@ -3,6 +3,8 @@ ServerAdmin Downtime
 
 ServerAdmin Downtime is a command-line web services browser. It is my tongue-in-cheek entry for Recommerce Hack Day (http://www.recommerceday.com) on Sept. 17, 2011. It allows one to search various APIs, and browse ASCII art versions of their catalog. It has a simple, driver interface, allowing you to add any searchable JSON-returning web server API. It was fun to participate with the Zappos team, and Sierra Trading Post, whos APIs are currently implemented.
 
+Use a BLACK BACKGROUND for best results!
+
 INSTALL
 -------
 
