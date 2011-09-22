@@ -23,8 +23,6 @@
 # 
 ####################
 
-ERRORPIC="error.jpg"
-
 
 startpage()
 {

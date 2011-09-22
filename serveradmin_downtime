@@ -29,6 +29,7 @@ HOMEDIR="/home/sad/serveradmindowntime"
 
 ### Initialize variables
 STARTPAGEPIC="serveradmindowntime2.jpg"
+ERRORPIC="error.jpg"
 TMP="/tmp/"
 DRIVERSDIR="${HOMEDIR}/drivers/"
 LOCALTMP="${HOMEDIR}/tmp/"
