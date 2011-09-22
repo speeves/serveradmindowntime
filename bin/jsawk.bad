@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+#
+# Jsawk: It's like awk for JSON, in bash.
+#
+# Fork me on github:
+#   http://github.com/micha/jsawk
+#
+# Author:
+#   Micha Niskin <micha@thinkminimo.com>
+#   Copyright 2009, no rights reserved, other than as required by the
+#   licenses of the incorporated software below.
+#
+
+nlines=0
+
+if [ "$1" != "-h" ]; then
+  read json
+  nlines=$(echo $json | grep -c '$' || echo 0)
+fi
+echo $json  | js bin/jsawk.js $nlines "$@"
+exit
+res=$(echo $json  | js bin/jsawk.js $nlines "$@")
+sleep 2
+echo 
+echo 
+echo
+echo $res
+ret=$?
+out=$(echo "$res" |sed '/^OUT: /s/^.....//p;d')
+err=$(echo "$res" |sed '/^ERR: /s/^.....//p;d')
+
+[ -n "$err" ] && echo "$err" 1>&2
+[ -n "$out" ] && echo "$out"
+
+exit $ret
