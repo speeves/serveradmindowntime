@@ -32,7 +32,8 @@ startpage()
     showstartpage
     driverlist
     choosedriver
-    
+
+    clear
     homepage
 }
 
@@ -81,12 +82,14 @@ performbrowse()
                 ITER=0
                 unsetdrivervars
                 unsetsearchresultcount
+                clear
                 startpage
             elif [ "${ACTION}" == "-1" ]; then
                 saygoodbye
             else
                 ITER=0
                 unsetsearchresultcount
+                clear
                 homepage
             fi
         done
