@@ -24,9 +24,7 @@
 ####################
 
 DRIVERNAME="Sierra_Trading_Post"
-HOMEPAGEPIC="sierra2.jpg"
-ERRORMSG="     We're sorry, we couldn't find any matches for your item, but we'd love to keep trying."
-ERRORPIC="sierra_error_dog.jpg"
+HOMEPAGEPIC="sierra.jpg"
 APIURL="http://apps.sierratradingpost.com/api/1.0/products/search"
 SIERRAAPIKEY="MYAPIKEY"
 

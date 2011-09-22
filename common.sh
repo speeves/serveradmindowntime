@@ -19,9 +19,11 @@
 #
 #####################
 #
-# REcommerce Hack Day - Sierra Trading Post site search
+# REcommerce Hack Day - Retail API site search
 # 
 ####################
+
+ERRORPIC="error.jpg"
 
 
 startpage()
@@ -92,9 +94,8 @@ performbrowse()
         done
     else
         clear
-        jp2a  ${IMAGESDIR}${CURRDRIVER}/${ERRORPIC}       
-        echo "${ERRORMSG}"
-        sleep 5
+        jp2a  ${IMAGESDIR}${ERRORPIC}       
+        sleep 3
         clear
         ITER=0
         unsetsearchresultcount

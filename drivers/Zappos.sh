@@ -24,9 +24,7 @@
 ####################
 
 DRIVERNAME="Zappos"
-HOMEPAGEPIC="zappos.jpg"
-ERRORMSG="     We're sorry, we couldn't find any matches for your item, but we'd love to keep trying."
-ERRORPIC="zappos_error.jpg"
+HOMEPAGEPIC="zappos2.jpg"
 APIURL="http://api.zappos.com/Search"
 APIPRODUCTURL="http://api.zappos.com/Product/id/"
 ZAPPOSAPIKEY="MYAPIKEY"
